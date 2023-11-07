@@ -1,0 +1,34 @@
+@media screen and (max-width: 520px) {
+    /*Tabel Responsive 3*/
+    .responsive-3 {
+        width: 100%;
+    }
+    .responsive-3 thead th.column-primary {
+        width: 100%;
+    }
+ 
+    .responsive-3 thead th:not(.column-primary) {
+        display:none;
+    }
+     
+    .responsive-3 td {
+        display: block;
+        width: auto;
+        text-align: right;
+        border-right: 1px solid #e1edff;
+    }
+    .responsive-3 thead th::before {
+        text-transform: uppercase;
+        font-weight: bold;
+        content: attr(data-header);
+    }
+    .responsive-3 thead th:first-child span {
+        display: none;
+    }
+    .responsive-3 td::before {
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+        content: attr(data-header);
+    }
+}
